@@ -43,6 +43,12 @@ Server Version 24.10.0 or higher are required for this feature.
 
    ![](/img/connecting-your-bank/connecting-your-bank-simplefin-06.webp)
 
+### Use a Different SimpleFIN Token for Each Budget
+
+By default the setup token is saved for the whole server, so every budget file uses the same SimpleFIN connection. To keep a connection to one budget, turn on **For this budget only** when entering the setup token. The token is then used only by the budget file that is open, and a budget with its own token never uses the server-wide one.
+
+On a [multi-user](../../config/multi-user.md) server, only admins can set the server-wide token. The owner of a budget file can set a token for that budget, as long as no server-wide token is in use.
+
 ### Link Accounts with SimpleFIN
 
 1. Add the link to your accounts in actual (Existing or New).
